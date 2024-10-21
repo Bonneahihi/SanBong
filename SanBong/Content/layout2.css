@@ -1,0 +1,91 @@
+﻿/* Kế thừa toàn bộ từ layout01.css */
+@import url('layout1.css');
+
+/* Đảm bảo footer luôn nằm ở cuối trang */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Cải thiện giao diện phần Giới Thiệu */
+.introduce-section {
+    padding: 50px;
+    background-color: #f0f0f0; /* Nền nhạt hơn để làm nổi bật phần giới thiệu */
+    text-align: center;
+}
+
+    .introduce-section h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #18458B;
+        margin-bottom: 20px;
+    }
+
+    .introduce-section p {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.8;
+        margin-bottom: 40px;
+    }
+
+    .introduce-section .highlight {
+        font-weight: bold;
+        color: #ffaa00;
+    }
+
+/* Định dạng lại footer để đảm bảo rằng nó luôn nằm dưới cùng */
+.sub-footer {
+    background-color: #18458b;
+    color: white;
+    padding: 20px 0;
+    margin-top: auto; /* Đẩy footer xuống dưới cùng */
+}
+
+    .sub-footer .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .sub-footer .col-sm-4 {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .sub-footer p {
+        font-size: 14px;
+    }
+
+    .sub-footer a {
+        color: #ffaa00;
+        text-decoration: none;
+    }
+
+        .sub-footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Responsive cải thiện */
+@media screen and (max-width: 768px) {
+    .introduce-section {
+        padding: 30px 10px;
+    }
+
+        .introduce-section h1 {
+            font-size: 28px;
+        }
+
+    .sub-footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-footer .col-sm-4 {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,122 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Trang Giới Thiệu - Đặt Sân</title>
+    <link rel="stylesheet" href="~/Content/layout2.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="~/images/logo sân.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="@Url.Action("Index", "TrangChu")">Trang chủ</a></li>
+                <li><a href="#">Danh sách sân bóng</a></li>
+                <li><a href="@Url.Action("Index", "Introduce")">Giới thiệu</a></li>
+                <li><a href="@Url.Action("Index", "ChinhSach")">Chính sách</a></li>
+                <li><a href="@Url.Action("Index", "DieuKhoan")">Điều Khoản</a></li>
+                <li><a href="@Url.Action("Index", "LienHe")">Liên Hệ</a></li>
+            </ul>
+        </nav>
+        <div class="right-side">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXrIOxYh1OFi5kZNF5nZiA8-6r92zLjUU-nT05bBTBTyZXUQ/viewform" target="_blank" class="customer-support">Chăm Sóc Khách Hàng</a>
+            <a href="#" class="login">Đăng nhập</a>
+            <a href="#" class="register">Đăng ký</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="introduce-section">
+            <h1>Giới Thiệu Về Chúng Tôi</h1>
+            <p>
+                Đặt sân bóng là dịch vụ cung cấp các tiện ích thông minh giúp bạn tìm kiếm và đặt sân bãi một cách nhanh chóng và hiệu quả.
+                Chúng tôi cam kết mang đến cho bạn trải nghiệm tốt nhất trong việc tìm kiếm sân bóng phù hợp với nhu cầu của mình.
+            </p>
+            <p class="highlight">Hãy để chúng tôi đồng hành cùng bạn trên hành trình thể thao!</p>
+        </div>
+
+        @RenderBody()
+    </main>
+
+    <hr />
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <div class="footer-widget fl-wrap">
+                        <h3 id="gioi-thieu">Giới thiệu</h3>
+                        <div class="footer-contacts-widget fl-wrap">
+                            <p>
+                                Đặt sân bóng cung cấp các tiện ích thông minh giúp cho bạn tìm sân bãi và đặt sân một cách hiệu quả nhất.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-12">
+                    <div class="footer-widget fl-wrap">
+                        <h3>Thông tin</h3>
+                        <div class="footer-contacts-widget fl-wrap">
+                            <ul class="footer-contacts fl-wrap">
+                                <li>
+                                    <span>
+                                        <i class="v-icon notranslate mdi mdi-home-modern" style="font-size:16px;color:#F9B90F;"></i>
+                                    </span>
+                                    Công ty Cổ phần Booking 247
+                                </li>
+                                <li>
+                                    <span>
+                                        <i class="v-icon notranslate mdi mdi-barcode" style="font-size:16px;color:#F9B90F;"></i>
+                                        MST: 0110175404
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <i class="v-icon notranslate mdi mdi-email-outline" style="font-size:16px;color:#F9B90F;"></i>
+                                        Mail: datsanbong999@gmail.com
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <i class="v-icon notranslate mdi mdi-map-marker-outline" style="font-size:16px;color:#F9B90F;"></i>
+                                        Địa chỉ: 806 QL22, ấp Mỹ Hoà 3, Hóc Môn, Hồ Chí Minh, Việt Nam
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <i class="v-icon notranslate mdi mdi-phone" style="font-size:16px;color:#F9B90F;"></i>
+                                        Điện thoại: 09.323.232.323
+                                    </span>
+                                </li>
+                                <li>
+                                    Giấy phép ĐKKD số 0110175404 do Sở Kế hoạch và Đầu tư thành phố Hà Nội cấp ngày 08/11/2022
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-12">
+                    <div class="footer-widget fl-wrap">
+                        <h3 id="lien-he">Liên hệ</h3>
+                        <div class="customer-support-widget fl-wrap">
+                            <h4>Chăm sóc khách hàng: </h4>
+                            09.323.232.323
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

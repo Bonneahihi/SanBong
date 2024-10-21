@@ -1,0 +1,112 @@
+﻿@import url('layout2.css');
+
+/* Các kiểu chung cho trang Liên Hệ */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Nền sáng để làm nổi bật nội dung */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #f39c12; /* Màu nổi bật cho tiêu đề chính */
+    text-align: center; /* Canh giữa tiêu đề */
+    margin-top: 40px; /* Khoảng cách trên cùng */
+    font-size: 36px; /* Kích thước chữ lớn cho tiêu đề */
+}
+
+h2 {
+    color: #333; /* Màu chữ cho tiêu đề phụ */
+    margin: 20px 0; /* Khoảng cách giữa tiêu đề và nội dung */
+}
+
+/* Phần nội dung chính */
+.contact-section {
+    max-width: 800px; /* Độ rộng tối đa của nội dung */
+    margin: 40px auto; /* Canh giữa trang */
+    padding: 20px; /* Padding cho phần nội dung */
+    background-color: white; /* Nền trắng cho nội dung chính */
+    border-radius: 12px; /* Bo góc cho khung */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho khung */
+}
+
+    /* Phần giới thiệu */
+    .contact-section p {
+        color: #555; /* Màu chữ cho phần giới thiệu */
+        font-size: 18px; /* Kích thước chữ */
+        line-height: 1.6; /* Khoảng cách giữa các dòng */
+        text-align: center; /* Canh giữa nội dung */
+        margin-bottom: 30px; /* Khoảng cách dưới cùng */
+    }
+
+/* Phần thông tin liên hệ */
+.contact-info {
+    margin-top: 20px; /* Khoảng cách trên */
+}
+
+    .contact-info h2 {
+        color: #f39c12; /* Màu nổi bật cho tiêu đề thông tin liên hệ */
+        text-align: center; /* Canh giữa tiêu đề */
+        margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+    }
+
+    .contact-info ul {
+        list-style-type: none; /* Bỏ dấu đầu dòng */
+        padding: 0; /* Bỏ padding cho ul */
+    }
+
+    .contact-info li {
+        margin: 15px 0; /* Khoảng cách giữa các mục */
+        font-size: 16px; /* Kích thước chữ cho thông tin liên hệ */
+        color: #666; /* Màu chữ cho thông tin liên hệ */
+        background-color: #f1f1f1; /* Nền nhẹ cho mỗi mục */
+        padding: 10px; /* Padding cho mục */
+        border-radius: 5px; /* Bo góc cho mục */
+        transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+    }
+
+        .contact-info li:hover {
+            background-color: #f39c12; /* Nền màu cam khi hover */
+            color: white; /* Chữ trắng khi hover */
+        }
+
+/* Phần mạng xã hội */
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Canh giữa các liên kết */
+    margin: 20px 0;
+}
+
+    .social-media h2 {
+        width: 100%;
+        text-align: center; /* Canh giữa tiêu đề mạng xã hội */
+        color: #f39c12; /* Màu nổi bật */
+        margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+    }
+
+    .social-media a {
+        display: flex;
+        align-items: center;
+        margin: 10px; /* Khoảng cách giữa các liên kết */
+        padding: 10px 15px; /* Padding cho các liên kết */
+        border-radius: 5px; /* Bo góc cho các liên kết */
+        text-decoration: none; /* Bỏ gạch chân */
+        background-color: #fff; /* Nền trắng cho các liên kết */
+        color: #333; /* Màu chữ */
+        border: 1px solid #ddd; /* Đường viền nhẹ cho các liên kết */
+        transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho các liên kết */
+    }
+
+        .social-media a:hover {
+            background-color: #f39c12; /* Nền màu cam khi hover */
+            color: white; /* Chữ trắng khi hover */
+        }
+
+    /* Biểu tượng mạng xã hội */
+    .social-media i,
+    .social-media svg {
+        margin-right: 8px; /* Khoảng cách giữa biểu tượng và chữ */
+        font-size: 20px; /* Kích thước biểu tượng */
+    }

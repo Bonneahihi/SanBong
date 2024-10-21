@@ -1,0 +1,58 @@
+﻿@import url('layout2.css');
+
+/* layout3.css */
+
+/* Đoạn văn mới được thêm vào */
+.new-paragraph {
+    font-size: 20px; /* Kích thước chữ lớn hơn */
+    color: #333; /* Màu chữ tối để dễ đọc */
+    line-height: 1.7; /* Khoảng cách giữa các dòng */
+    margin: 30px 0; /* Khoảng cách trên và dưới đoạn văn */
+    padding: 25px; /* Đệm bên trong cho đoạn văn */
+    background-color: #f4f4f4; /* Nền nhẹ cho đoạn văn */
+    border-left: 5px solid #3498db; /* Đường viền bên trái màu xanh */
+    border-radius: 8px; /* Bo góc cho đoạn văn */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng cho đoạn văn */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động cho hover */
+}
+
+    .new-paragraph:hover {
+        background-color: #e6f7ff; /* Thay đổi màu nền khi hover */
+        transform: translateY(-5px); /* Nâng lên khi hover */
+        border-left-color: #2980b9; /* Đổi màu viền khi hover */
+    }
+
+/* Nếu cần điều chỉnh thêm cho các đoạn văn khác */
+.paragraph {
+    margin-bottom: 25px; /* Khoảng cách giữa các đoạn văn */
+    text-align: justify; /* Căn giữa văn bản cho đồng đều */
+    font-family: 'Verdana', sans-serif; /* Font chữ cho đoạn văn */
+    font-weight: 400; /* Độ dày chữ */
+    padding: 10px 0; /* Đệm cho các đoạn văn */
+}
+
+/* Responsive cho màn hình nhỏ */
+@media screen and (max-width: 768px) {
+    .new-paragraph {
+        font-size: 18px; /* Giảm kích thước chữ trên màn hình nhỏ */
+        padding: 20px; /* Giảm đệm cho vừa với màn hình */
+        margin: 20px 0; /* Điều chỉnh lại khoảng cách */
+    }
+}
+
+/* Tiêu đề chính sách */
+.policy-title {
+    font-size: 32px; /* Kích thước chữ lớn hơn */
+    color: #2c3e50; /* Màu chữ tối hơn */
+    text-align: center; /* Căn giữa chữ */
+    margin: 40px 0; /* Khoảng cách trên và dưới tiêu đề */
+    font-weight: bold; /* Đậm chữ tiêu đề */
+    text-transform: uppercase; /* Chữ in hoa */
+    font-family: 'Arial Black', sans-serif; /* Phông chữ đậm và nổi bật */
+    letter-spacing: 1px; /* Khoảng cách giữa các chữ cái */
+    border-bottom: 2px solid #3498db; /* Đường dưới tiêu đề */
+    padding-bottom: 10px; /* Đệm dưới cho tiêu đề */
+    background: linear-gradient(to right, #3498db, #2ecc71); /* Nền gradient cho tiêu đề */
+    color: white; /* Màu chữ trắng cho nổi bật trên nền gradient */
+}
+
